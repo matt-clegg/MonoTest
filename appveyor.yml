@@ -10,12 +10,15 @@ environment:
   matrix:
     - project_name: MonoTest.DirectX/MonoTest.DirectX.csproj
     - project_name: MonoTest.OpenGL/MonoTest.OpenGL.csproj
-	  platform:
-	    - x86
-		- x64
+      platform:
+	    x86
+		x64
 
 build:
   project: $(project_name)
   verbosity: minimal
 
 test: off
+
+matrix:
+  fast_finish: true
