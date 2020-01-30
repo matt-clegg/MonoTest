@@ -14,7 +14,7 @@ install:
 
     Start-FileDownload $source
 
-    Start-Process -Wait -FilePath $output -ArgumentsList "/S"
+    Start-Process -Wait -FilePath $output /S
 
 environment:
   matrix:
