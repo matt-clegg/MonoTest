@@ -7,8 +7,8 @@ configuration:
 platform: x86
 
 matrix:
-  project: MonoTest.DirectX/MonoTest.DirectX.csproj
-  project: MonoTest.DirectX/MonoTest.OpenGL.csproj
+  - project: MonoTest.DirectX/MonoTest.DirectX.csproj
+  - project: MonoTest.DirectX/MonoTest.OpenGL.csproj
 
 build:
   project: $(project_name)
