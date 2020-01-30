@@ -18,11 +18,12 @@ install:
 
 environment:
   matrix:
-    - project_name: MonoTest.DirectX/MonoTest.DirectX.csproj
-    - project_name: MonoTest.OpenGL/MonoTest.OpenGL.csproj
+    - project_name: MonoTest.Another
+    - project_name: MonoTest.DirectX
+    - project_name: MonoTest.OpenGL
 
 build:
-  project: $(project_name)
+  project: $(project_name)/$(project_name).cshtml
   verbosity: minimal
 
 test: off
