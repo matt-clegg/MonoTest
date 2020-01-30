@@ -11,8 +11,8 @@ environment:
     - project_name: MonoTest.DirectX/MonoTest.DirectX.csproj
     - project_name: MonoTest.OpenGL/MonoTest.OpenGL.csproj
       platform:
-	    x86
-		x64
+	    - x86
+		- x64
 
 build:
   project: $(project_name)
