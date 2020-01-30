@@ -4,7 +4,9 @@ configuration:
   - Release
   - Debug
 
-platform: x86
+platform: 
+  - x86
+  - x64
 
 build:
   project: MonoTest.OpenGL.csproj
