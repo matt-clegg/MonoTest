@@ -1,0 +1,13 @@
+version: 1.0.{build}
+
+configuration:
+  - Release
+  - Debug
+
+platform: x86
+
+build:
+  project: MonoTest.DirectX.csproj
+  verbosity: minimal
+
+test: off

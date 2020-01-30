@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.manifest" />
+    <None Include="appveyor.yml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\" />
