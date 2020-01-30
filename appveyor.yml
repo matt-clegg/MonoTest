@@ -8,10 +8,8 @@ platform: x86
 
 install: 
   - ps: >-
-      $source = "https://github.com/MonoGame/MonoGame/releases/download/v3.7.1/MonoGameSetup.exe"
-      $output = "c:\application\data\MonoGameSetup.exe"
-      Invoke-WebRequest $source -OutFile $output
-      Start-Process -Wait -FilePath $output
+      Invoke-WebRequest  "https://github.com/MonoGame/MonoGame/releases/download/v3.7.1/MonoGameSetup.exe" -OutFile "c:\application\data\MonoGameSetup.exe"
+      Start-Process -Wait -FilePath "c:\application\data\MonoGameSetup.exe"
 
 environment:
   matrix:
