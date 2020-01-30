@@ -1,0 +1,28 @@
+version: 1.0.{build}
+
+configuration:
+  - Release
+  - Debug
+
+platform: x86
+
+install: 
+  - ps: >-
+      $source = "https://github.com/MonoGame/MonoGame/releases/download/v3.7.1/MonoGameSetup.exe"
+      $output = "c:\application\data\MonoGameSetup.exe"
+      Invoke-WebRequest $source -OutFile $output
+      Start-Process -Wait -FilePath $output
+
+environment:
+  matrix:
+    - project_name: MonoTest.DirectX/MonoTest.DirectX.csproj
+    - project_name: MonoTest.OpenGL/MonoTest.OpenGL.csproj
+
+build:
+  project: $(project_name)
+  verbosity: minimal
+
+test: off
+
+matrix:
+  fast_finish: true

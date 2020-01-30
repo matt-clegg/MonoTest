@@ -9,6 +9,11 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MonoTest.Core", "MonoTest.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoTest.OpenGL", "MonoTest.OpenGL\MonoTest.OpenGL.csproj", "{928C63B7-751C-41E8-84CC-53426B3324F0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7156FC2E-9C38-4C52-BAAE-81627D4ADD5A}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		MonoTest.Core\MonoTest.Core.projitems*{928c63b7-751c-41e8-84cc-53426b3324f0}*SharedItemsImports = 4
