@@ -23,7 +23,7 @@ environment:
     - project_name: MonoTest.OpenGL
 
 build:
-  project: $(project_name)/$(project_name).cshtml
+  project: $(project_name)/$(project_name).csproj
   verbosity: minimal
 
 test: off
