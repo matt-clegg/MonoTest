@@ -6,9 +6,10 @@ configuration:
 
 platform: x86
 
-matrix:
-  - project_name: MonoTest.DirectX/MonoTest.DirectX.csproj
-  - project_name: MonoTest.DirectX/MonoTest.OpenGL.csproj
+environment:
+  matrix:
+    - project_name: MonoTest.DirectX/MonoTest.DirectX.csproj
+    - project_name: MonoTest.DirectX/MonoTest.OpenGL.csproj
 
 build:
   project: $(project_name)
