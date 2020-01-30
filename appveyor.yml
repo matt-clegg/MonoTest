@@ -10,11 +10,11 @@ install:
 - ps: >-
     $source = "https://github.com/MonoGame/MonoGame/releases/download/v3.7.1/MonoGameSetup.exe"
 
-    $output = "c:\application\data\MonoGameSetup.exe"
+    $output = "MonoGameSetup.exe"
 
-    Invoke-WebRequest $source -OutFile $output
+    Start-FileDownload $source
 
-    Start-Process -Wait -FilePath $output
+    Start-Process -Wait -FilePath $output -ArgumentsList "/S" -Wait
 
 environment:
   matrix:
