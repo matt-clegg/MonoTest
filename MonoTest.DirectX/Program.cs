@@ -1,4 +1,5 @@
 ﻿using System;
+using MonoTest.Core;
 
 namespace MonoTest.DirectX
 {
