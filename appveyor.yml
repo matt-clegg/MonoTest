@@ -10,23 +10,21 @@ install:
 
     Start-Process -Wait -FilePath $output /S
 
+configuration:
+- Release
+- Debug
+
 environment:
   matrix:
 
   # DirectX Job
   - job_name: DirectX
     project_name: MonoTest.DirectX
-    configuration: 
-      Debug
-      Release
     platform: x86
 
   # OpenGL Job
   - job_name: OpenGL
     project_name: MonoTest.OpenGL
-    configuration: 
-      Debug
-      Release
     platform: AnyCPU
 
 matrix:
