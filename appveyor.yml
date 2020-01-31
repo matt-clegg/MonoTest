@@ -1,10 +1,5 @@
 version: 1.0.{build}
 
-configuration:
-  - Release
-  - Debug
-
-
 install:
 - ps: >-
     $source = "https://github.com/MonoGame/MonoGame/releases/download/v3.7.1/MonoGameSetup.exe"
@@ -15,12 +10,27 @@ install:
 
     Start-Process -Wait -FilePath $output /S
 
+environment:
+  matrix:
+
+  # DirectX Job
+  - job_name: DirectX
+    project_name: MonoTest.DirectX
+    configuration: Release
+    platform: x86
+
+  # OpenGL Job
+  - job_name: OpenGL
+    project_name: MonoTest.OpenGL
+    configuration: Release
+    platform: Any CPU
+
+matrix:
+  fast_finish: true
+
 build:
-  project: MonoTest.sln
+  project: $(project_name)/$(project_name).csproj
   parallel: true
   verbosity: minimal
 
 test: off
-
-matrix:
-  fast_finish: true

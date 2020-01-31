@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoTest.DirectX", "MonoTest.DirectX\MonoTest.DirectX.csproj", "{ED038BB1-2AF1-47BF-A6BB-F7423586B644}"
-EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MonoTest.Core", "MonoTest.Core\MonoTest.Core.shproj", "{A0CDBD0E-3A41-42B7-9425-A838BC2C7383}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7156FC2E-9C38-4C52-BAAE-81627D4ADD5A}"
@@ -12,16 +10,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		appveyor.yml = appveyor.yml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoTest.Another", "MonoTest.Another\MonoTest.Another.csproj", "{0760B17E-7C12-4375-AC47-07937C22E554}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoTest.OpenGL", "MonoTest.OpenGL\MonoTest.OpenGL.csproj", "{908E942C-97CC-4308-B409-2833AAFCBF62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoTest.DirectX", "MonoTest.DirectX\MonoTest.DirectX.csproj", "{53460FAF-C9E5-4FDF-9D99-B653A4161D8B}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		MonoTest.Core\MonoTest.Core.projitems*{0760b17e-7c12-4375-ac47-07937c22e554}*SharedItemsImports = 4
+		MonoTest.Core\MonoTest.Core.projitems*{53460faf-c9e5-4fdf-9d99-b653a4161d8b}*SharedItemsImports = 4
 		MonoTest.Core\MonoTest.Core.projitems*{908e942c-97cc-4308-b409-2833aafcbf62}*SharedItemsImports = 4
 		MonoTest.Core\MonoTest.Core.projitems*{a0cdbd0e-3a41-42b7-9425-a838bc2c7383}*SharedItemsImports = 13
-		MonoTest.Core\MonoTest.Core.projitems*{ed038bb1-2af1-47bf-a6bb-f7423586b644}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,18 +27,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ED038BB1-2AF1-47BF-A6BB-F7423586B644}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{ED038BB1-2AF1-47BF-A6BB-F7423586B644}.Debug|x86.ActiveCfg = Debug|x86
-		{ED038BB1-2AF1-47BF-A6BB-F7423586B644}.Debug|x86.Build.0 = Debug|x86
-		{ED038BB1-2AF1-47BF-A6BB-F7423586B644}.Release|Any CPU.ActiveCfg = Release|x86
-		{ED038BB1-2AF1-47BF-A6BB-F7423586B644}.Release|x86.ActiveCfg = Release|x86
-		{ED038BB1-2AF1-47BF-A6BB-F7423586B644}.Release|x86.Build.0 = Release|x86
-		{0760B17E-7C12-4375-AC47-07937C22E554}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{0760B17E-7C12-4375-AC47-07937C22E554}.Debug|x86.ActiveCfg = Debug|x86
-		{0760B17E-7C12-4375-AC47-07937C22E554}.Debug|x86.Build.0 = Debug|x86
-		{0760B17E-7C12-4375-AC47-07937C22E554}.Release|Any CPU.ActiveCfg = Release|x86
-		{0760B17E-7C12-4375-AC47-07937C22E554}.Release|x86.ActiveCfg = Release|x86
-		{0760B17E-7C12-4375-AC47-07937C22E554}.Release|x86.Build.0 = Release|x86
 		{908E942C-97CC-4308-B409-2833AAFCBF62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{908E942C-97CC-4308-B409-2833AAFCBF62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{908E942C-97CC-4308-B409-2833AAFCBF62}.Debug|x86.ActiveCfg = Debug|Any CPU
@@ -50,6 +35,12 @@ Global
 		{908E942C-97CC-4308-B409-2833AAFCBF62}.Release|Any CPU.Build.0 = Release|Any CPU
 		{908E942C-97CC-4308-B409-2833AAFCBF62}.Release|x86.ActiveCfg = Release|Any CPU
 		{908E942C-97CC-4308-B409-2833AAFCBF62}.Release|x86.Build.0 = Release|Any CPU
+		{53460FAF-C9E5-4FDF-9D99-B653A4161D8B}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{53460FAF-C9E5-4FDF-9D99-B653A4161D8B}.Debug|x86.ActiveCfg = Debug|x86
+		{53460FAF-C9E5-4FDF-9D99-B653A4161D8B}.Debug|x86.Build.0 = Debug|x86
+		{53460FAF-C9E5-4FDF-9D99-B653A4161D8B}.Release|Any CPU.ActiveCfg = Release|x86
+		{53460FAF-C9E5-4FDF-9D99-B653A4161D8B}.Release|x86.ActiveCfg = Release|x86
+		{53460FAF-C9E5-4FDF-9D99-B653A4161D8B}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
