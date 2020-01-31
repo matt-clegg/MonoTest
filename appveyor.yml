@@ -4,7 +4,6 @@ configuration:
   - Release
   - Debug
 
-platform: x86
 
 install:
 - ps: >-
@@ -16,22 +15,8 @@ install:
 
     Start-Process -Wait -FilePath $output /S
 
-environment:
-  matrix:
-    - project_name: MonoTest.Another
-    - project_name: MonoTest.DirectX
-    - project_name: MonoTest.OpenGL
-
-for:
-  -
-    matrix:
-      only:
-        - project_name: MonoTest.OpenGL
-
-    platform: Any CPU
-
 build:
-  project: $(project_name)/$(project_name).csproj
+  project: MonoTest.sln
   parallel: true
   verbosity: minimal
 
