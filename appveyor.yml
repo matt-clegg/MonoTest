@@ -16,14 +16,18 @@ environment:
   # DirectX Job
   - job_name: DirectX
     project_name: MonoTest.DirectX
-    configuration: Release
+    configuration: 
+      - Debug
+      - Release
     platform: x86
 
   # OpenGL Job
   - job_name: OpenGL
     project_name: MonoTest.OpenGL
-    configuration: Release
-    platform: Any CPU
+    configuration: 
+      - Debug
+      - Release
+    platform: AnyCPU
 
 matrix:
   fast_finish: true
