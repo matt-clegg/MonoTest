@@ -21,7 +21,15 @@ environment:
     - project_name: MonoTest.Another
     - project_name: MonoTest.DirectX
     - project_name: MonoTest.OpenGL
-        - platform: Any CPU
+
+for:
+-
+  matrix:
+    only:
+      - project_name: MonoTest.OpenGL
+
+  platform:
+    - Any CPU
 
 build:
   project: $(project_name)/$(project_name).csproj
