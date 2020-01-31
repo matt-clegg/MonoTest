@@ -23,16 +23,16 @@ environment:
     - project_name: MonoTest.OpenGL
 
 for:
--
-  matrix:
-    only:
-      - project_name: MonoTest.OpenGL
+  -
+    matrix:
+      only:
+        - project_name: MonoTest.OpenGL
 
-  platform:
-    - Any CPU
+    platform: Any CPU
 
 build:
   project: $(project_name)/$(project_name).csproj
+  parallel: true
   verbosity: minimal
 
 test: off
